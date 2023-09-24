@@ -85,7 +85,7 @@ export default function Hero() {
             <div className="hidden text-right md:block">
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <a
-                  href="#"
+                  href="tel:+18592876687"
                   className="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-gray-600 hover:bg-gray-50"
                 >
                   Contact
@@ -136,7 +136,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  href="tel:+18592876687"
                   className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-gray-600 hover:bg-gray-100"
                 >
                   Contact
