@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -7,25 +7,7 @@ const navigation = [
   { name: 'Testimonies', href: '#review' },
 ]
 
-const images = [
-  // "/gal1.jpeg",
-  "/gal3.jpeg",
-  // "/gal4.jpeg",
-]
-
 export default function Hero() {
-  const [currentIndex, setIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIndex(prevIndex => 
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, [images]);
-
   return (
     <div className="relative overflow-hidden bg-white">
       <div className="hidden lg:absolute lg:inset-0 lg:block" aria-hidden="true">
@@ -58,7 +40,7 @@ export default function Hero() {
           <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-6" aria-label="Global">
             <div className="flex flex-1 items-center">
               <div className="flex w-full items-center justify-between md:w-auto">
-                <a href="#">
+                <a href="/">
                   <span className="sr-only">N. Bradley Construction</span>
                   <img
                     className="h-8 w-auto sm:h-10"
@@ -195,7 +177,7 @@ export default function Hero() {
                 <p className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
                   <img
                     className="w-full"
-                    src={images[currentIndex]}
+                    src="/gal3.jpeg"
                     alt=""
                   />
                 </p>
